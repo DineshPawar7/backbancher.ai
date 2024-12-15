@@ -10,14 +10,16 @@ const App = () => {
         <h1 className="heading">
           Grow Your Skills And<h1 className="heading-2">Advance Carrer</h1>
         </h1>
+        <div className="discription-lines">
         <p className="description">
           Revolutionizing education through AI: Discover personalized,
           interactive,
+          </p>
           <p className="description-2nd">
             and adaptive learning experiences designed to meet your unique goals
             and needs
           </p>
-        </p>
+          </div>
 
         {/* Search Bar */}
         <div className="search-bar">

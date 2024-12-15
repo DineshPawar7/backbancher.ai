@@ -1,18 +1,26 @@
 import React from "react";
 import "../styles/Courses.css"; // External CSS file for styling
-import { FaRobot, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaPython, FaDatabase, FaLaptopCode } from "react-icons/fa";
+import { FaRobot, FaChartLine, FaSitemap, FaCheckCircle, FaLaptopCode } from "react-icons/fa";
+import { CgWorkAlt } from "react-icons/cg";
+import { PiStudentBold } from "react-icons/pi";
+import { PiCertificateLight } from "react-icons/pi";
+
+
+
+
+
 
 const FeaturedCourses = () => {
     // Array of course objects with icons and text
     const courses = [
-        { icon: <FaRobot />, text: "AI and Robotics" },
-        { icon: <FaNodeJs />, text: "Node.js Development" },
-        { icon: <FaHtml5 />, text: "HTML5 Basics" },
-        { icon: <FaCss3Alt />, text: "CSS3 Styling" },
-        { icon: <FaJsSquare />, text: "JavaScript Fundamentals" },
-        { icon: <FaPython />, text: "Python Programming" },
-        { icon: <FaDatabase />, text: "Database Management" },
-        { icon: <FaLaptopCode />, text: "Full-Stack Development" }
+        { icon: <FaCheckCircle />, text: "80% Free" },
+        { icon: <PiStudentBold />, text: "Career Suggestions" },
+        { icon: <FaRobot />, text: "AI Assistant" },
+        { icon: <FaChartLine />, text: "Progress Tracking" },
+        { icon: <CgWorkAlt />, text: "Job Board" },
+        { icon: <FaSitemap />, text: "Roadmap" },
+        { icon: <PiCertificateLight />, text: "Free Certification" },
+        { icon: <FaLaptopCode/>, text: "Dedicated to Developers" }
     ];
 
     return (
@@ -28,6 +36,8 @@ const FeaturedCourses = () => {
             </div>
         </div>
     );
+
+    
 };
 
 export default FeaturedCourses;

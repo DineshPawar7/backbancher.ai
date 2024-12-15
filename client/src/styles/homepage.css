@@ -4,30 +4,39 @@
   text-align: center;
   font-family: "Open Sans", sans-serif;
   padding-bottom: 10.5rem;
-  
 }
 
 .heading {
   margin-top: 10rem;
   font-size: 60px;
   margin-bottom: 30px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 650;
-
+  line-height: 65px;
+  text-transform: capitalize;
+  
 }
 .heading-2 {
   font-size: 60px;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 650;
+  text-transform: capitalize;
+}
+
+.discription-lines {
+  line-height: 4px;
+  margin-bottom: 30px;
 }
 
 .description {
+  justify-content: center;
   font-size: 16px;
   margin-bottom: 20px;
   color: #555;
 }
 .description-2nd {
+  justify-content: center;
   font-size: 16px;
   margin: 4px;
   color: #555;
@@ -49,7 +58,7 @@
 }
 
 .search-btn {
-  background-color: #007bff;
+  background-color: #1b7a47;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -80,7 +89,5 @@
 
 .suggestion-item i {
   margin-right: 8px;
-  color: #007bff;
+  color: #1b7a47;
 }
-
-
