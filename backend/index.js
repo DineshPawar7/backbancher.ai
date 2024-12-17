@@ -3,11 +3,24 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const newUserModel = require("./models/newUser");
-const app = express();
-app.use(cors());
-app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/newUser");
+
+const app = express()
+app.use(cors(
+  {
+    origin: ["https://deviq-ai.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
+app.use(express.json())
+
+
+mongoose.connect('mongodb+srv://dsp70458:<jf3nmsIep0L8SMUB>@deviq.uofiz.mongodb.net/?retryWrites=true&w=majority&appName=deviq')
+
+app.get("/", (req, res) => {
+  res.json("Hello");
+})
 
 app.post("/login", (req, res) => {
     const {email, password} = req.body;
